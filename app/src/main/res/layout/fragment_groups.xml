@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_groupa"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGroupa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                        android:id="@+id/tvGrupoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo A"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidosa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDifa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntosa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_groupa"
+        />
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_groupb"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        android:layout_below="@+id/listGrupoA"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGroupb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvGrupob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo B"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidosb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDifb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntosb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_groupb"
+        />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_groupc"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        android:layout_below="@+id/listGrupoB"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGroupc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvGrupoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo C"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidosc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDifc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntosc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_groupc"
+        />
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_groupd"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        android:layout_below="@+id/listGrupoC"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGroupd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvGrupod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo D"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidosd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDifd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntosd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_groupd"
+        />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_groupe"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        android:layout_below="@+id/listGrupoD"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGroupe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvGrupoe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_groupe"
+        />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_groupf"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        android:layout_below="@+id/listGrupoE"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGroupf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvGrupof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo F"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidosf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDiff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntosf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_groupf"
+        />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_groupg"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        android:layout_below="@+id/listGrupoF"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGroupg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvGrupog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo G"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidosg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDifg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntosg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_groupg"
+        />
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_grouph"
+        style="@style/AppTheme.Card.Margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/bg_bubble_self"
+        android:layout_below="@+id/listGrupoG"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_bubble_self"
+
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyGrouph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyImage"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvGrupoh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Grupo H"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="P"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPartidosh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="G-E-P"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvDifh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dif"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvPuntosh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Pts"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listGrupoH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_grouph"
+        />
+
+    <ProgressBar
+        android:id="@+id/pbGroups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
